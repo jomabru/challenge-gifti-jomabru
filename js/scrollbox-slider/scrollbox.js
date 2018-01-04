@@ -3,12 +3,12 @@
     $.fn.scrollbox = function(config) {
         //default config
         var defConfig = {
-            linear: false,          // Scroll method
-            startDelay: 2,          // Start delay (in seconds)
-            delay: 3,               // Delay after each scroll event (in seconds)
-            step: 0,                // Distance of each single step (in pixels)
-            speed: 32,              // Delay after each single step (in milliseconds)
-            switchItems: 1,         // Items to switch after each scroll event
+            linear: false,
+            startDelay: 5,
+            delay: 9,
+            step: 0,
+            speed: 32,
+            switchItems: 1,
             direction: 'vertical',
             distance: 'auto',
             autoPlay: true,

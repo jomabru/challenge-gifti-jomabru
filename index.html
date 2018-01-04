@@ -4,13 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="scrollbox-slider/style-scrollbox.css">
+  <link rel="stylesheet" href="./js/scrollbox-slider/style-scrollbox.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <title>Gifti - Jeux et Jouets</title>
 </head>
 <body>
   <header>
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="./img/logo.png" alt="" style="width:197px;height:100px;">
+      <div id="searchbar">
+        <form action="" class="formulaire">
+          <input class="champ" type="text" value="" placeholder="Recherchez un jouet, un jeu...             &#xf002;">
+        </form>
+      </div>
+    </div>
+    <ul class="icon-achat">
+      <li>
+        <a href="">
+          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
     <!-- NAVBAR -->
     <nav class="navbar">
       <ul class="menu">
@@ -35,26 +58,65 @@
         <li>
           <a href="contact.html">Contact</a>
         </li>
-        <li>
-          <a href="jeu-reduc.html">Je gagne mes réductions !</a>
-        </li>
       </ul>
     </nav>
   </header>
   <!-- SCROLLBOX SLIDER -->
-  <img src="img/......jpg" alt="" class="squelette">
+  <!-- <img src="img/slide1.jpg" alt="" class="squelette"> -->
 	    <div id="slider">
 
         	<div class="slideshow">
-				 <ul>
-					 <li><img src="img/.......jpg" alt=""></li>
-					 <li><img src="img/.......jpg" alt=""></li>
-					 <li><img src="img/.......jpg" alt=""></li>
-				 </ul>
-			</div>
-        </div>
+  				 <ul>
+  					 <li><img src="img/slide1.jpg" alt=""></li>
+  					 <li><img src="img/slide2.jpg" alt=""></li>
+  					 <li><img src="img/slide3.jpg" alt=""></li>
+             <li><img src="img/slide4.jpg" alt=""></li>
+  					 <li><img src="img/slide5.jpg" alt=""></li>
+  					 <li><img src="img/slide6.jpg" alt=""></li>
+             <li><img src="img/slide7.jpg" alt=""></li>
+  				 </ul>
+			  </div>
+      </div>
+      <section id="Product">
+               <h2>Les nouvelles tendances</h2>
+               <!-- 1ère ligne -->
+                <ul class="product-line">
+                  <li class="four-products">
+                    <a href="#">
+                      <img src="img/2.gif" width="" height="" alt="" />
+                      <h3 class="title-product">Cluedo</h3>
+                      <div class="price">15,00 €</div>
+                    </a>
+                  </li>
+                  <li class="four-products">
+                    <a href="#">
+                      <img src="img/3.gif" width="" height="" alt="" />
+                      <h3 class="title-product">Devine Tête</h3>
+                      <div class="price">15,00 €</div>
+                    </a>
+                  </li>
+                  <li class="four-products">
+                    <a href="#">
+                      <img src="img/1736238_1.gif" width="" height="" alt="" />
+                      <h3 class="title-product">1000 Bornes</h3>
+                      <div class="price">15,00 €</div>
+                    </a>
+                  </li>
+                  <li class="four-products">
+                    <a href="#">
+                      <img src="img/monopoly.gif" width="" height="" alt="" />
+                      <h3 class="two-lines">Monopoly<br> Games of Thrones</h3>
+                      <div class="price">15,00 €</div>
+                    </a>
+                  </li>
+                </ul>
 <!-- JEU DE LA BATAILLE NAVALE -->
-<center>
+<!-- <div class="regles">
+  <h2>Règle de la Bataille Navale</h2>
+  <p><span>But du jeu :</span> Couler tous les bateaux (masqués) de l'ordinateur avant qu'il ne coule les vôtres.</p>
+  <p>Tout d'abord, construisez vos bateaux (horizontalement ou verticalement en cliquant sur les cases de votre camp). Les bateaux peuvent se toucher par le bout ou le côté mais pas se croiser</p>
+</div> -->
+<!-- <center>
   <table id="plateau" border="1">
     <tr>
       <td class="caseBataille"></td>
@@ -201,7 +263,9 @@
     </tr>
   </table>
   <input type="text" id="coup" /><input type="button" id="jouer" value="Valider"/>
-  </center>
-<script src="./js/naval-battle.js"></script>
+  </center> -->
+<script type="text/javascript" src="./js/naval-battle.js"></script>
+<script type="text/javascript" src="./js/scrollbox-slider/scrollbox.js"></script>
+<script type="text/javascript" src="./js/jq.js"></script>
 </body>
 </html>
