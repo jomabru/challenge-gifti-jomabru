@@ -21,24 +21,25 @@
           <input class="champ" type="text" value="" placeholder="Recherchez un jouet, un jeu...             &#xf002;">
         </form>
       </div>
+    <!-- ICON-ACHAT-PANIER -->
+      <ul class="icon-achat">
+        <li>
+          <a href="">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
     </div>
-    <ul class="icon-achat">
-      <li>
-        <a href="">
-          <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa fa-home" aria-hidden="true"></i>
-        </a>
-      </li>
-    </ul>
     <!-- NAVBAR -->
     <nav class="navbar">
       <ul class="menu">
         <li>
-          <a href="index.html">Accueil</a>
+          <a href="index.html" class="active">Accueil</a>
         </li>
         <li>
           <a href="moins-de-cinq-ans.html">Moins de 5 ans</a>
@@ -110,161 +111,8 @@
                     </a>
                   </li>
                 </ul>
-<!-- JEU DE LA BATAILLE NAVALE -->
-<!-- <div class="regles">
-  <h2>Règle de la Bataille Navale</h2>
-  <p><span>But du jeu :</span> Couler tous les bateaux (masqués) de l'ordinateur avant qu'il ne coule les vôtres.</p>
-  <p>Tout d'abord, construisez vos bateaux (horizontalement ou verticalement en cliquant sur les cases de votre camp). Les bateaux peuvent se toucher par le bout ou le côté mais pas se croiser</p>
-</div> -->
-<!-- <center>
-  <table id="plateau" border="1">
-    <tr>
-      <td class="caseBataille"></td>
-      <td class="caseBataille">A</td>
-      <td class="caseBataille">B</td>
-      <td class="caseBataille">C</td>
-      <td class="caseBataille">D</td>
-      <td class="caseBataille">E</td>
-      <td class="caseBataille">F</td>
-      <td class="caseBataille">G</td>
-      <td class="caseBataille">H</td>
-      <td class="caseBataille">I</td>
-      <td class="caseBataille">J</td>
-    </tr>
-    <tr>
-      <td class="caseBataille">1</td>
-      <td class="caseBataille" id="A1"></td>
-      <td class="caseBataille" id="B1"></td>
-      <td class="caseBataille" id="C1"></td>
-      <td class="caseBataille" id="D1"></td>
-      <td class="caseBataille" id="E1"></td>
-      <td class="caseBataille" id="F1"></td>
-      <td class="caseBataille" id="G1"></td>
-      <td class="caseBataille" id="H1"></td>
-      <td class="caseBataille" id="I1"></td>
-      <td class="caseBataille" id="J1"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">2</td>
-      <td class="caseBataille" id="A2"></td>
-      <td class="caseBataille" id="B2"></td>
-      <td class="caseBataille" id="C2"></td>
-      <td class="caseBataille" id="D2"></td>
-      <td class="caseBataille" id="E2"></td>
-      <td class="caseBataille" id="F2"></td>
-      <td class="caseBataille" id="G2"></td>
-      <td class="caseBataille" id="H2"></td>
-      <td class="caseBataille" id="I2"></td>
-      <td class="caseBataille" id="J2"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">3</td>
-      <td class="caseBataille" id="A3"></td>
-      <td class="caseBataille" id="B3"></td>
-      <td class="caseBataille" id="C3"></td>
-      <td class="caseBataille" id="D3"></td>
-      <td class="caseBataille" id="E3"></td>
-      <td class="caseBataille" id="F3"></td>
-      <td class="caseBataille" id="G3"></td>
-      <td class="caseBataille" id="H3"></td>
-      <td class="caseBataille" id="I3"></td>
-      <td class="caseBataille" id="J3"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">4</td>
-      <td class="caseBataille" id="A4"></td>
-      <td class="caseBataille" id="B4"></td>
-      <td class="caseBataille" id="C4"></td>
-      <td class="caseBataille" id="D4"></td>
-      <td class="caseBataille" id="E4"></td>
-      <td class="caseBataille" id="F4"></td>
-      <td class="caseBataille" id="G4"></td>
-      <td class="caseBataille" id="H4"></td>
-      <td class="caseBataille" id="I4"></td>
-      <td class="caseBataille" id="J4"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">5</td>
-      <td class="caseBataille" id="A5"></td>
-      <td class="caseBataille" id="B5"></td>
-      <td class="caseBataille" id="C5"></td>
-      <td class="caseBataille" id="D5"></td>
-      <td class="caseBataille" id="E5"></td>
-      <td class="caseBataille" id="F5"></td>
-      <td class="caseBataille" id="G5"></td>
-      <td class="caseBataille" id="H5"></td>
-      <td class="caseBataille" id="I5"></td>
-      <td class="caseBataille" id="J5"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">6</td>
-      <td class="caseBataille" id="A6"></td>
-      <td class="caseBataille" id="B6"></td>
-      <td class="caseBataille" id="C6"></td>
-      <td class="caseBataille" id="D6"></td>
-      <td class="caseBataille" id="E6"></td>
-      <td class="caseBataille" id="F6"></td>
-      <td class="caseBataille" id="G6"></td>
-      <td class="caseBataille" id="H6"></td>
-      <td class="caseBataille" id="I6"></td>
-      <td class="caseBataille" id="J6"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">7</td>
-      <td class="caseBataille" id="A7"></td>
-      <td class="caseBataille" id="B7"></td>
-      <td class="caseBataille" id="C7"></td>
-      <td class="caseBataille" id="D7"></td>
-      <td class="caseBataille" id="E7"></td>
-      <td class="caseBataille" id="F7"></td>
-      <td class="caseBataille" id="G7"></td>
-      <td class="caseBataille" id="H7"></td>
-      <td class="caseBataille" id="I7"></td>
-      <td class="caseBataille" id="J7"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">8</td>
-      <td class="caseBataille" id="A8"></td>
-      <td class="caseBataille" id="B8"></td>
-      <td class="caseBataille" id="C8"></td>
-      <td class="caseBataille" id="D8"></td>
-      <td class="caseBataille" id="E8"></td>
-      <td class="caseBataille" id="F8"></td>
-      <td class="caseBataille" id="G8"></td>
-      <td class="caseBataille" id="H8"></td>
-      <td class="caseBataille" id="I8"></td>
-      <td class="caseBataille" id="J8"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">9</td>
-      <td class="caseBataille" id="A9"></td>
-      <td class="caseBataille" id="B9"></td>
-      <td class="caseBataille" id="C9"></td>
-      <td class="caseBataille" id="D9"></td>
-      <td class="caseBataille" id="E9"></td>
-      <td class="caseBataille" id="F9"></td>
-      <td class="caseBataille" id="G9"></td>
-      <td class="caseBataille" id="H9"></td>
-      <td class="caseBataille" id="I9"></td>
-      <td class="caseBataille" id="J9"></td>
-    </tr>
-    <tr>
-      <td class="caseBataille">10</td>
-      <td class="caseBataille" id="A10"></td>
-      <td class="caseBataille" id="B10"></td>
-      <td class="caseBataille" id="C10"></td>
-      <td class="caseBataille" id="D10"></td>
-      <td class="caseBataille" id="E10"></td>
-      <td class="caseBataille" id="F10"></td>
-      <td class="caseBataille" id="G10"></td>
-      <td class="caseBataille" id="H10"></td>
-      <td class="caseBataille" id="I10"></td>
-      <td class="caseBataille" id="J10"></td>
-    </tr>
-  </table>
-  <input type="text" id="coup" /><input type="button" id="jouer" value="Valider"/>
-  </center> -->
-<script type="text/javascript" src="./js/naval-battle.js"></script>
+
+
 <script type="text/javascript" src="./js/scrollbox-slider/scrollbox.js"></script>
 <script type="text/javascript" src="./js/jq.js"></script>
 </body>

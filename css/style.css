@@ -10,14 +10,17 @@
   margin: 0;
   padding : 0;
 }
+body {
+  overflow-x: hidden;
+}
 .container {
   width: 100%;
 }
 /**********************************************************************LOGO*/
 .logo {
-    width: 100%;
+    width: 97%;
     height: 100px;
-    padding: 20px 0 20px 20px;
+    padding: 20px;
 }
 .logo img {
     float: left;
@@ -28,7 +31,7 @@
   height:auto;
 }
 .formulaire {
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .formulaire .champ {
   width:315px;
@@ -40,10 +43,39 @@
 /****************************************************************ICON-ACHAT*/
 .icon-achat {
     float: right;
+    position: absolute;
+    top: 94px;
+    right: 15px;
 }
+.icon-achat li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+.fa.fa-shopping-basket, .fa.fa-home {
+    color: #e9ab2b;
+    font-size: 21px;
+}
+/*.fa.fa-home {
+    font-weight: bold;
+}*/
 /********************************************************************NAVBAR*/
 .navbar {
     background-color: #e9ab2b;
+}
+.menu {
+    padding: 15px 0;
+}
+.menu li {
+    display: inline-block;
+    margin-left: 81px;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: Lato,Arial,sans-serif;
+  font-weight: bold;
 }
 /**********************************************PRODUITS NOUVELLES TENDANCES*/
 #Product {
@@ -194,12 +226,11 @@ h3.title-product {
   margin: 0;
 }
 /*BATAILLE NAVALE*/
-.caseBataille {
+/*.caseBataille {
     width: 20px;
     height: 20px;
     text-align: center;
-}
-
+}*/
 
 /*Try icon fontawesome in input placeholder*/
 .formulaire input{
