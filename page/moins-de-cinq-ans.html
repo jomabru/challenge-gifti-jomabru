@@ -4,15 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../css/style.css">
-  <title>Jeux et Jouets pour enfants de moins de 5 ans - Gifti</title>
+  <link rel="stylesheet" href="./js/scrollbox-slider/style-scrollbox.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <title>Gifti - Jeux et Jouets</title>
 </head>
 <body>
   <header>
+    <!-- LOGO -->
+    <div class="logo">
+      <img src="../img/logo.png" alt="" style="width:197px;height:100px;">
+      <div id="searchbar">
+        <form action="" class="formulaire">
+          <input class="champ" type="text" value="" placeholder="Recherchez un jouet, un jeu...             &#xf002;">
+        </form>
+      </div>
+    <!-- ICON-ACHAT-PANIER -->
+      <ul class="icon-achat">
+        <li>
+          <a href="">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- NAVBAR -->
     <nav class="navbar">
       <ul class="menu">
         <li>
-          <a href="index.html">Accueil</a>
+          <a href="../index.html" class="active">Accueil</a>
         </li>
         <li>
           <a href="moins-de-cinq-ans.html">Moins de 5 ans</a>
@@ -32,13 +59,50 @@
         <li>
           <a href="contact.html">Contact</a>
         </li>
-        <li>
-          <a href="jeu-reduc.html">Je gagne mes réductions !</a>
-        </li>
       </ul>
     </nav>
   </header>
+  <!-- BANNIERE -->
+  <div class="banner">
+      <img src="../img/bebes.jpg" alt=""></li>
+  </div>
+  <!-- PRODUITS -->
+      <section id="Product">
+               <h2>Les nouvelles tendances</h2>
+               <!-- 1ère ligne -->
+                <ul class="product-line">
+                  <li class="four-products">
+                    <a href="#">
+                      <img src="img/2.gif" width="" height="" alt="" />
+                      <h3 class="title-product">Cluedo</h3>
+                      <div class="price">15,00 €</div>
+                    </a>
+                  </li>
+                  <li class="four-products">
+                    <a href="#">
+                      <img src="img/3.gif" width="" height="" alt="" />
+                      <h3 class="title-product">Devine Tête</h3>
+                      <div class="price">15,00 €</div>
+                    </a>
+                  </li>
+                  <li class="four-products">
+                    <a href="#">
+                      <img src="img/1736238_1.gif" width="" height="" alt="" />
+                      <h3 class="title-product">1000 Bornes</h3>
+                      <div class="price">15,00 €</div>
+                    </a>
+                  </li>
+                  <li class="four-products">
+                    <a href="#">
+                      <img src="img/monopoly.gif" width="" height="" alt="" />
+                      <h3 class="two-lines">Monopoly<br> Games of Thrones</h3>
+                      <div class="price">15,00 €</div>
+                    </a>
+                  </li>
+                </ul>
+            </section>
 
-
+<script type="text/javascript" src="./js/scrollbox-slider/scrollbox.js"></script>
+<script type="text/javascript" src="./js/jq.js"></script>
 </body>
 </html>
