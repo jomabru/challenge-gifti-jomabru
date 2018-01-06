@@ -16,8 +16,8 @@ Jeux de société : #ff8c05
      src: url('../font/Lato-light.ttf');
 }
 @font-face {
-     font-family: 'DKLemonYellowSun', sans-serif;
-     src: url('../font/DKLemonYellowSun.otf');  /*Vérifier extraction font*/
+     font-family: 'DK Lemon Yellow Sun', sans-serif;
+     src: url('../font/DK Lemon Yellow Sun.otf');  /*Vérifier extraction font*/
 }
 * {
   margin: 0;
@@ -439,11 +439,12 @@ button {
 .info-footer ul {
     display: inline-grid;
     width: auto;
-    margin-left: 83px;
+    margin-left: 118px;
 }
 .info-footer ul h3 {
-  font-family: DKLemonYellowSun,Arial,sans-serif;
+  font-family: DK Lemon Yellow Sun,Arial,sans-serif;
   color: #e9ab2b;
+  font-size: 21px;
 }
 .info-footer ul li {
     list-style-type: none;
@@ -451,15 +452,19 @@ button {
     margin-top: 30px;
 }
 .info-footer ul li a {
-    font-family: DKLemonYellowSun,Arial,sans-serif;
+    font-family: Lato,Arial,sans-serif;
     text-decoration: none;
     color: #000;
     color: #8c8c8c;
+    font-size: 16px;
 }
 .info-footer ul li a:hover {
     text-decoration: underline;
 }
-.info-footer ul li, .info-footer ul li:last-child {
+.info-footer ul li {
+  margin-top: 37px;
+}
+.info-footer ul li:last-child {
   margin-top: 40px;
 }
 .fa.fa-facebook-square:before, .fa.fa-twitter-square:before {
