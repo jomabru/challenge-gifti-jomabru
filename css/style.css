@@ -88,7 +88,7 @@ header {
     padding: 0 20px;
 }
 .menu li.active-index {
-    background-color: #fff;
+    background-color: #14134e; /*Demander à Bruno de pipeter un bleu nuit sur l'image*/
 }
 .menu li.active-index a {
     color: #e9ab2b;
@@ -124,7 +124,7 @@ header {
     color: #fff;
 }
 .menu li.active-contact {
-    background-color: #fff;
+    background-color: #fff; /*Demander à Bruno de pipeté une couleur en fonction de la future bannière*/
 }
 .menu li.active-contact a {
     color: #e9ab2b;
@@ -142,10 +142,10 @@ header {
 #Product {
     clear: both;
     width: 100%;
+    height: 1590px;
 }
 #Product {
-    clear: both;
-    height: 1410px;
+
 }
 #Product img:hover {
     background-color: #000;
@@ -155,8 +155,8 @@ header {
     margin-left: 18px;
     text-align: left;
     padding: 40px 10px 0 20px;
-    font-size: 24px;
-    font-family: Lato,Arial,sans-serif;
+    font-size: 27px;
+    font-family: DK Lemon Yellow Sun,Arial,sans-serif;
     color: #e9ab2b;
 }
 .product-line {
@@ -174,9 +174,9 @@ header {
     position: relative;
 }
 .four-products:hover {
-    -webkit-box-shadow: inset 0 0 0 3px #e0e0e0;
-    -moz-box-shadow: inset 0 0 0 3px #e0e0e0;
-    box-shadow: inset 0 0 0 3px #e0e0e0;
+    -webkit-box-shadow: inset 0 0 10px 2px #e0e0e0;
+    -moz-box-shadow: inset 0 0 10px 2px #e0e0e0;
+    box-shadow: inset 0 0 10px 2px #e0e0e0;
 }
 .four-products img {
     max-width: 100%;
@@ -216,6 +216,10 @@ h3.title-product {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+}
+.price:hover {
+  background-color: #e9ab2b;
+  padding: 5px 10px;
 }
 /**********************************************************SCROLLBOX SLIDER*/
 #slider-references {
@@ -428,6 +432,7 @@ button {
     width: 100%;
     clear: both;
     padding: 40px 0;
+    border-top: 2px solid #e9ab2b;
 }
 .colon-foot {
     width: 85%;
@@ -462,7 +467,7 @@ button {
     text-decoration: underline;
 }
 .info-footer ul li {
-  margin-top: 37px;
+  margin-top: 38px;
 }
 .info-footer ul li:last-child {
   margin-top: 40px;
@@ -476,6 +481,8 @@ button {
   color: #8c8c8c;
     margin: 70px auto 0 auto;
     width: 29%;
+  font-family: Lato,Arial,sans-serif;
+  text-align: center;
 }
 .copyright a {
     text-decoration: none;
