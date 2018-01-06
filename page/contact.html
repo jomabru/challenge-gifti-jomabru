@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="./js/scrollbox-slider/style-scrollbox.css">
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="../js/scrollbox-slider/style-scrollbox.css">
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <title>Gifti - Jeux et Jouets</title>
 </head>
@@ -15,7 +15,9 @@
   <header>
     <!-- LOGO -->
     <div class="logo">
-      <img src="./img/logo.png" alt="" style="width:197px;height:100px;">
+      <a href="../index.html">
+        <img src="../img/logo.png" alt="" style="width:197px;height:100px;">
+      </a>
       <div id="searchbar">
         <form action="" class="formulaire">
           <input class="champ" type="text" value="" placeholder="Recherchez un jouet, un jeu...             &#xf002;">
@@ -54,49 +56,39 @@
           <a href="jeux-de-societe.html">Jeux de société</a>
         </li>
         <li>
-          <a href="jeux-videos.html">Jeux vidéos</a>
+          <a href="jeux-video.html">Jeux vidéo</a>
         </li>
-        <li>
+        <li class="active-contact">
           <a href="contact.html">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
 
-      <section id="Product">
-               <h2>Les nouvelles tendances</h2>
-               <!-- 1ère ligne -->
-                <ul class="product-line">
-                  <li class="four-products">
-                    <a href="#">
-                      <img src="img/2.gif" width="" height="" alt="" />
-                      <h3 class="title-product">Cluedo</h3>
-                      <div class="price">15,00 €</div>
-                    </a>
-                  </li>
-                  <li class="four-products">
-                    <a href="#">
-                      <img src="img/3.gif" width="" height="" alt="" />
-                      <h3 class="title-product">Devine Tête</h3>
-                      <div class="price">15,00 €</div>
-                    </a>
-                  </li>
-                  <li class="four-products">
-                    <a href="#">
-                      <img src="img/1736238_1.gif" width="" height="" alt="" />
-                      <h3 class="title-product">1000 Bornes</h3>
-                      <div class="price">15,00 €</div>
-                    </a>
-                  </li>
-                  <li class="four-products">
-                    <a href="#">
-                      <img src="img/monopoly.gif" width="" height="" alt="" />
-                      <h3 class="two-lines">Monopoly<br> Games of Thrones</h3>
-                      <div class="price">15,00 €</div>
-                    </a>
-                  </li>
-                </ul>
-            </section>
+      <!-- BANNIERE -->
+      <div class="banner">
+          <img src="../img/filles.jpg" alt=""></li>
+      </div>
+
+      <!-- FORMULAIRE-->
+        <form action="/ma-page-de-traitement" method="post" class="form">
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" />
+            </div>
+            <div>
+                <label for="courriel">Courriel :</label>
+                <input type="email" id="courriel" />
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit">Envoyer votre message</button>
+            </div>
+        </form>
 
 <script type="text/javascript" src="./js/scrollbox-slider/scrollbox.js"></script>
 <script type="text/javascript" src="./js/jq.js"></script>

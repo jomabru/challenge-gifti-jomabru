@@ -1,3 +1,12 @@
+/******************************** CODE COULEURS
+Filles : #f606b5
+- de 5 ans : #fcf305
+Garçons : #189fde
+Plein air : #0ac22d
+Déguisement : #e009fa
+Jeux Vidéo : #cd003e
+Jeux de société : #ff8c05
+******************************************************************************/
 @font-face {
      font-family: 'Lato-Bold', sans-serif;
      src: url('../font/Lato-Bold.ttf');
@@ -5,6 +14,10 @@
 @font-face {
      font-family: 'Lato-Light', sans-serif;
      src: url('../font/Lato-light.ttf');
+}
+@font-face {
+     font-family: 'DKLemonYellowSun', sans-serif;
+     src: url('../font/DKLemonYellowSun.otf');  /*Vérifier extraction font*/
 }
 * {
   margin: 0;
@@ -30,15 +43,15 @@ body {
   position:relative;
   height:auto;
 }
-.formulaire {
+.formulaire-search {
     margin-top: 70px;
 }
-.formulaire .champ {
+.formulaire-search .champ {
   width:315px;
   height:20px;
 }
 .fa fa-search {
-  color: #000;
+  color: #e9ab2b;
 }
 /****************************************************************ICON-ACHAT*/
 .icon-achat {
@@ -56,26 +69,70 @@ body {
     color: #e9ab2b;
     font-size: 21px;
 }
-/*.fa.fa-home {
-    font-weight: bold;
-}*/
 /********************************************************************NAVBAR*/
 .navbar {
     background-color: #e9ab2b;
 }
 .menu {
-    padding: 15px 0;
+    margin: 0 auto;
+    height: 74px;
 }
 .menu li {
+    height: 74px;
     display: inline-block;
-    margin-left: 81px;
+    margin-left: 45px;
+    padding: 0 20px;
+}
+.menu li.active-index {
+    background-color: #fff;
+}
+.menu li.active-index a {
+    color: #e9ab2b;
+}
+.menu li.active-cinq_ans {
+    background-color: #fcf305;
+}
+.menu li.active-cinq_ans a {
+    color: #fff;
+}
+.menu li.active-filles {
+    background-color: #f606b5;
+}
+.menu li.active-filles a {
+    color: #fff;
+}
+.menu li.active-garcons {
+    background-color: #189fde;
+}
+.menu li.active-garcons a {
+    color: #fff;
+}
+.menu li.active-societe {
+    background-color: #ff8c05;
+}
+.menu li.active-garcons a {
+    color: #fff;
+}
+.menu li.active-video {
+    background-color: #cd003e;
+}
+.menu li.active-video a {
+    color: #fff;
+}
+.menu li.active-contact {
+    background-color: #fff;
+}
+.menu li.active-contact a {
+    color: #e9ab2b;
 }
 .menu li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  font-family: Lato,Arial,sans-serif;
-  font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: Lato,Arial,sans-serif;
+    font-weight: bold;
+    line-height: 74px;
 }
 /**********************************************PRODUITS NOUVELLES TENDANCES*/
 #Product {
@@ -248,7 +305,7 @@ img {
   width: 100%;
   height: auto;
 }
-h1 {
+.jeu {
   text-align: center;
   color: orange;
   margin-bottom: 26px;
@@ -299,7 +356,7 @@ td {
     text-align: center;
     margin-top: 20px;
 }
-/**********************************ANIMATION CONFETTIS*/
+/****************************************************ANIMATION CONFETTIS*/
 .confetti {
     width: 15px;
     height: 15px;
@@ -319,8 +376,55 @@ td {
     bottom: 62px;
     right: 162px;
 }
-
-/*Try icon fontawesome in input placeholder*/
 .formulaire input{
   font-family: FontAwesome;
 }
+/***************************************************************FORMULAIRE*/
+.form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    margin-top: 100px;
+}
+.form div + div {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+#nom, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+#courriel:focus, textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+.button {
+
+    padding-left: 90px;
+}
+
+button {
+    margin-left: .5em;
+}
+/*********************************************************FOOTER*/
+.info-footer ul {
+    display: inline-grid;
+    width: 23%;
+}
+.info-footer ul li a {
+    font-family: DKLemonYellowSun,Arial,sans-serif;
+}
+/*font-family: DKLemonYellowSun,Arial,sans-serif;*/

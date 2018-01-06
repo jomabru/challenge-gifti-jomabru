@@ -115,15 +115,15 @@ for (var i = 0; i < td.length; i++) {
           document.getElementsByTagName('body')[0].style.backgroundSize = "100%"; // Je règle la taille du bg à 100% pour qu'il s'adapte à la résolution de l'écran
           document.getElementById('bingo').style.backgroundColor = "Blue"; // Je change la couleur du bg d'alerte de victoire pour le joueur 2
         }
-      // document.getElementById('bingo').innerHTML = "Félicitations... Le player " + player + " a gagné son bon de réduction de 20% à valoir sur tout le site !!!"; // Rappel de la div #bingo du html vers le js
-      // document.getElementById('bingo').classList.remove("hidden"); // J'enlève la class (css) pour afficher la div en cas de victoire
-      // document.getElementById('bingo').onclick = function() // Lorsque l'on clique sur le message
-      // {
-      //   document.getElementById('bingo').classList.add("hidden"); // Le message de victoire disparaît lorsqu'on clique dessus
-      // }
-      // for (var i = 0; i < table.length; i++) { // i=0; si i est plus petit que la longueur du tableau; i++ agrémente i de 1 à chaque fois
-      //   document.getElementById(i).onclick = function() { return false; }; // Le clic de l'autre joueur ne fonctionnera pas
-      // }
+       document.getElementById('bingo').innerHTML = "Félicitations... Le player " + player + " a gagné son bon de réduction de 10% à valoir sur tout le site !!!"; // Rappel de la div #bingo du html vers le js
+       document.getElementById('bingo').classList.remove("hidden"); // J'enlève la class (css) pour afficher la div en cas de victoire
+       document.getElementById('bingo').onclick = function() // Lorsque l'on clique sur le message
+       {
+         document.getElementById('bingo').classList.add("hidden"); // Le message de victoire disparaît lorsqu'on clique dessus
+       }
+       for (var i = 0; i < table.length; i++) { // i=0; si i est plus petit que la longueur du tableau; i++ agrémente i de 1 à chaque fois
+        document.getElementById(i).onclick = function() { return false; }; // Le clic de l'autre joueur ne fonctionnera pas
+       }
     }
 
 }
@@ -143,21 +143,21 @@ function testVictoire() { // J'appelle la fonction pour tester la victoire
           document.getElementsByTagName('body')[0].style.backgroundSize = "100%"; // Je règle la taille du bg à 100% pour qu'il s'adapte à la résolution de l'écran
           document.getElementById('bingo').style.backgroundColor = "Blue"; // Je change la couleur du bg d'alerte de victoire pour le joueur 2
         }
-      // document.getElementById('bingo').innerHTML = "Félicitations... Le player " + player + " a gagné son bon de réduction de 20% à valoir sur tout le site !!!"; // Rappel de la div #bingo du html vers le js
-      // document.getElementById('bingo').classList.remove("hidden"); // J'enlève la class (css) pour afficher la div en cas de victoire
-      // document.getElementById('bingo').onclick = function() // Lorsque l'on clique sur le message
-      // {
-      //   document.getElementById('bingo').classList.add("hidden"); // Le message de victoire disparaît lorsqu'on clique dessus
-      // }
-      // for (var i = 0; i < table.length; i++) { // i=0; si i est plus petit que la longueur du tableau; i++ agrémente i de 1 à chaque fois
-      //   document.getElementById(i).onclick = function() { return false; }; // Le clic de l'autre joueur ne fonctionnera pas
-      // }
+      document.getElementById('bingo').innerHTML = "Félicitations... Le player " + player + " a gagné son bon de réduction de 10% à valoir sur tout le site !!!"; // Rappel de la div #bingo du html vers le js
+      document.getElementById('bingo').classList.remove("hidden"); // J'enlève la class (css) pour afficher la div en cas de victoire
+      document.getElementById('bingo').onclick = function() // Lorsque l'on clique sur le message
+      {
+        document.getElementById('bingo').classList.add("hidden"); // Le message de victoire disparaît lorsqu'on clique dessus
+      }
+      for (var i = 0; i < table.length; i++) { // i=0; si i est plus petit que la longueur du tableau; i++ agrémente i de 1 à chaque fois
+        document.getElementById(i).onclick = function() { return false; }; // Le clic de l'autre joueur ne fonctionnera pas
+      }
     }
   }
 
 function confetti(){  // J'appelle la fonction confetti
   var couleurs = new Array(); // Je crée ma variable "couleurs" qui correspond à mon tableau
-  couleurs = ["red","blue","yellow","green","gold","silver","white","bronze", "darkorange"]; // Je définie les couleurs de mes confettis
+  couleurs = ["#f606b5","#fcf305","#189fde","#0ac22d","#e009fa","#cd003e","#ff8c05"]; // Je définie les couleurs de mes confettis
   for (var i = 0; i < 300; i++) { // Je crée une boucle qui va répéter 300 fois mon action
     var conf = document.createElement("div"); // Je crée un élément div et je le stocke dans la variable "conf"
     document.getElementsByTagName('body')[0].appendChild(conf); // Je rajoute l'élément enfant dans le corps de la page (body)
