@@ -65,7 +65,7 @@ body {
     display: inline-block;
     margin-left: 20px;
 }
-.fa.fa-shopping-basket, .fa.fa-home {
+.fa.fa-shopping-basket, .fa.fa-home, .fa.fa-search {
     color: #e9ab2b;
     font-size: 21px;
 }
@@ -75,10 +75,10 @@ body {
 }
 .menu {
     margin: 0 auto;
-    height: 74px;
+    height: 55px;
 }
 .menu li {
-    height: 74px;
+    height: 55px;
     display: inline-block;
     margin-left: 45px;
     padding: 0 20px;
@@ -132,7 +132,7 @@ body {
     font-size: 18px;
     font-family: Lato,Arial,sans-serif;
     font-weight: bold;
-    line-height: 74px;
+    line-height: 55px;
 }
 /**********************************************PRODUITS NOUVELLES TENDANCES*/
 #Product {
@@ -153,7 +153,7 @@ body {
     padding: 40px 10px 0 20px;
     font-size: 24px;
     font-family: Lato,Arial,sans-serif;
-    color: #000;
+    color: #e9ab2b;
 }
 .product-line {
     width: 100%;
@@ -420,11 +420,58 @@ button {
     margin-left: .5em;
 }
 /*********************************************************FOOTER*/
+.footer {
+    width: 100%;
+    clear: both;
+    padding: 40px 0;
+}
+.colon-foot {
+    width: 85%;
+    margin: 0 auto;
+}
+.info-footer {
+
+}
 .info-footer ul {
     display: inline-grid;
-    width: 23%;
+    width: auto;
+    margin-left: 83px;
+}
+.info-footer ul h3 {
+  font-family: DKLemonYellowSun,Arial,sans-serif;
+  color: #e9ab2b;
+}
+.info-footer ul li {
+    list-style-type: none;
+    width: 100%;
+    margin-top: 30px;
 }
 .info-footer ul li a {
     font-family: DKLemonYellowSun,Arial,sans-serif;
+    text-decoration: none;
+    color: #000;
+    color: #8c8c8c;
 }
-/*font-family: DKLemonYellowSun,Arial,sans-serif;*/
+.info-footer ul li a:hover {
+    text-decoration: underline;
+}
+.info-footer ul li, .info-footer ul li:last-child {
+  margin-top: 40px;
+}
+.fa.fa-facebook-square:before, .fa.fa-twitter-square:before {
+  margin-right: 20px;
+  color: #e9ab2b;
+  font-size: 21px;
+}
+.copyright {
+  color: #8c8c8c;
+    margin: 70px auto 0 auto;
+    width: 29%;
+}
+.copyright a {
+    text-decoration: none;
+    color: #8c8c8c;
+}
+.copyright a:hover {
+  text-decoration: underline;
+}
