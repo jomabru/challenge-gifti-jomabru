@@ -9,12 +9,6 @@ Jeux Vidéo : #cd003e
 Jeux de société : #ff8c05
 Contact : #535758
 ******************************************************************************/
-
-header
-{
-background-color: #ff6600; background-image: url(../img/pattern.png);
-}
-
 @font-face {
      font-family: 'Lato-Bold', sans-serif;
      src: url('../font/Lato-Bold.ttf');
@@ -31,7 +25,7 @@ background-color: #ff6600; background-image: url(../img/pattern.png);
   margin: 0;
   padding : 0;
 }
-body {#f606b5
+body {/*#f606b5*/
   overflow-x: hidden;
 }
 .container {
@@ -39,11 +33,15 @@ body {#f606b5
 }
 /***************************************************HEADER*/
 header {
-    border-bottom: 2px solid #fff;
+  /*background-color: #fbf1db;*/
+  /*background-color: #e9ab2b;
+  opacity: 0.8;*/
+  /*background-image: url(../img/pattern.png);*/
 }
 /**********************************************************************LOGO*/
 .logo {
-    width: 97%;#ff8c05
+    background-color: #e6ba60;
+    /*opacity: 0.7;*/
     height: 100px;
     padding: 20px;
 }
@@ -112,7 +110,7 @@ header {
 .menu li {
     height: 55px;
     display: inline-block;
-    margin-left: 45px;
+    margin-left: 11px;
     padding: 0 20px;
 }
 .menu li.active-index {
@@ -267,7 +265,27 @@ h3.title-product {
 }
 .price:hover {
   background-color: #e9ab2b;
-  /*padding: 2px 5px;*/
+}
+/******************************************************************BANNIERE*/
+.banner {
+  position:relative;
+}
+.bouton-jeu {
+  background-color: #e9ab2b;
+  position: absolute;
+  top: 372px;
+  right: 163px;
+  border-radius: 20px;
+}
+.bouton-jeu a {
+  display: block;
+  color: #fff;
+  font-family: Lato, Arial, sans-serif;
+  text-decoration: navajowhite;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: bold;
+  padding: 16px 108px;
 }
 /**********************************************************SCROLLBOX SLIDER*/
 #slider-references {
@@ -316,7 +334,7 @@ h3.title-product {
 }
 #slider-references #demo-btn a {
   cursor: pointer;
-  color:#fff;
+  /*color:#fff;*/
   position: absolute;
   top: -150px;
   -moz-border-radius: 50%;
@@ -326,7 +344,7 @@ h3.title-product {
   padding: 10px 15px;
 }
 #slider-references #demo-btn a:hover {
-  color:deepskyblue;
+  /*color:deepskyblue;*/
 }
 #slider-references #demo-btn a#demo-backward {
   left: 60px;
@@ -540,30 +558,26 @@ button {
 }
 .fa.fa-facebook-square:before, .fa.fa-twitter-square:before {
   margin-right: 20px;
-<<<<<<< HEAD
 }
+/*.fa.fa-facebook-square, .fa.fa-twitter-square {
+  color: #fff;
+  font-size: 21px;
+}
+.fa.fa-facebook-square:hover, .fa.fa-twitter-square:hover {
+  color: #000;
+
+}*/
 .fa.fa-facebook-square, .fa.fa-twitter-square {
   color: #fff;
   font-size: 21px;
 }
 .fa.fa-facebook-square:hover, .fa.fa-twitter-square:hover {
   color: #000;
-=======
-  /*color: #e9ab2b;*/
-  /*font-size: 21px;*/
-}
-.fa.fa-facebook-square, .fa.fa-twitter-square {
-  color: #e9ab2b;
-  font-size: 21px;
-}
-.fa.fa-facebook-square:hover, .fa.fa-twitter-square:hover {
-  color: #8c8c8c;
->>>>>>> 4543ef3acfd7f663031bd52e9c675327dc2913f1
 }
 .copyright {
   color: #fff;
-    margin: 70px auto 0 auto;
-    width: 29%;
+  margin: 70px auto 0 auto;
+  width: 29%;
   font-family: Lato,Arial,sans-serif;
   text-align: center;
 }
@@ -572,14 +586,17 @@ button {
     color: #fff;
 }
 .copyright a:hover {
+  color: #000;
   text-decoration: underline;
+}
+/***************************CONTACT**************************/
+.contact-infos, .form {
+    width:45%;
+    float: left;
 }
 /**********************************************************BACK-TOP***/
 #back-top {
-  background-color: #e9ab2b;
-    /*background-image: -webkit-linear-gradient(30deg, #e9ab2b 0%, #ffffff 100%);
-    background-image: -o-linear-gradient(30deg, #e9ab2b 0%, #ffffff 100%);
-    background-image: linear-gradient(120deg, #e9ab2b 0%, #ffffff 100%);*/
+    background-color: #253860;
     width: 30px;
     height: 30px;
     border-radius : 20%;
@@ -588,16 +605,14 @@ button {
     right: 4px;
 }
 #back-top:hover {
-  background-color: #e9ab2b;
-    /*background-image: -webkit-linear-gradient(30deg, #ffffff 0%, #e9ab2b 100%);
-    background-image: -o-linear-gradient(30deg, #ffffff 0%, #e9ab2b 100%);
-    background-image: linear-gradient(120deg, #ffffff 0%, #e9ab2b 100%);
-}*/
-#back-top a i {
+    background-color: #e9ab2b;
+
+}
+#back-top a .fa.fa-chevron-up {
     font-size: 20px;
     color: #fff;
     line-height: 28px;
-    padding-left: 6px;
+    padding-left: 5px;
     width: 24px;
     height: 30px;
 }
