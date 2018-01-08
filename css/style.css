@@ -9,6 +9,12 @@ Jeux Vidéo : #cd003e
 Jeux de société : #ff8c05
 Contact : #535758
 ******************************************************************************/
+
+header
+{
+background-color: #ff6600; background-image: url(../img/pattern.png);
+}
+
 @font-face {
      font-family: 'Lato-Bold', sans-serif;
      src: url('../font/Lato-Bold.ttf');
@@ -534,6 +540,7 @@ button {
 }
 .fa.fa-facebook-square:before, .fa.fa-twitter-square:before {
   margin-right: 20px;
+<<<<<<< HEAD
 }
 .fa.fa-facebook-square, .fa.fa-twitter-square {
   color: #fff;
@@ -541,6 +548,17 @@ button {
 }
 .fa.fa-facebook-square:hover, .fa.fa-twitter-square:hover {
   color: #000;
+=======
+  /*color: #e9ab2b;*/
+  /*font-size: 21px;*/
+}
+.fa.fa-facebook-square, .fa.fa-twitter-square {
+  color: #e9ab2b;
+  font-size: 21px;
+}
+.fa.fa-facebook-square:hover, .fa.fa-twitter-square:hover {
+  color: #8c8c8c;
+>>>>>>> 4543ef3acfd7f663031bd52e9c675327dc2913f1
 }
 .copyright {
   color: #fff;
