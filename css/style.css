@@ -1,11 +1,13 @@
 /******************************** CODE COULEURS
-Filles : #f606b5
+Accueil : #253860
 - de 5 ans : #fcf305
+Filles : #f606b5
 Garçons : #189fde
 Plein air : #0ac22d
 Déguisement : #e009fa
 Jeux Vidéo : #cd003e
 Jeux de société : #ff8c05
+Contact : #535758
 ******************************************************************************/
 @font-face {
      font-family: 'Lato-Bold', sans-serif;
@@ -23,7 +25,7 @@ Jeux de société : #ff8c05
   margin: 0;
   padding : 0;
 }
-body {
+body {#f606b5
   overflow-x: hidden;
 }
 .container {
@@ -35,7 +37,7 @@ header {
 }
 /**********************************************************************LOGO*/
 .logo {
-    width: 97%;
+    width: 97%;#ff8c05
     height: 100px;
     padding: 20px;
 }
@@ -54,8 +56,26 @@ header {
   width:315px;
   height:20px;
 }
-.fa fa-search {
-  color: #e9ab2b;
+.index-icon {
+  color: #253860;
+}
+.cinq-ans-icon {
+  color: #fcf305;
+}
+.filles-icon {
+  color: #f606b5;
+}
+.garcons-icon {
+  color: #189fde;
+}
+.societe-icon {
+  color: #ff8c05;
+}
+.video-icon {
+  color: #cd003e;
+}
+.contact-icon {
+  color: #535758;
 }
 /****************************************************************ICON-ACHAT*/
 .icon-achat {
@@ -70,8 +90,10 @@ header {
     margin-left: 20px;
 }
 .fa.fa-shopping-basket, .fa.fa-home, .fa.fa-search {
-    color: #e9ab2b;
     font-size: 21px;
+}
+.fa.fa-shopping-basket:hover, .fa.fa-home:hover, .fa.fa-search:hover {
+  color: #8c8c8c;
 }
 /********************************************************************NAVBAR*/
 .navbar {
@@ -88,10 +110,10 @@ header {
     padding: 0 20px;
 }
 .menu li.active-index {
-    background-color: #14134e; /*Demander à Bruno de pipeter un bleu nuit sur l'image*/
+    background-color: #253860;
 }
 .menu li.active-index a {
-    color: #e9ab2b;
+    color: #fff;
 }
 .menu li.active-cinq_ans {
     background-color: #fcf305;
@@ -124,7 +146,7 @@ header {
     color: #fff;
 }
 .menu li.active-contact {
-    background-color: #fff; /*Demander à Bruno de pipeté une couleur en fonction de la future bannière*/
+    background-color: #535758;
 }
 .menu li.active-contact a {
     color: #e9ab2b;
@@ -151,13 +173,33 @@ header {
     background-color: #000;
     opacity: 0.9;
 }
-#Product h2 {
+#Product h1, .contact-title  {
     margin-left: 18px;
     text-align: left;
     padding: 40px 10px 0 20px;
     font-size: 27px;
     font-family: DK Lemon Yellow Sun,Arial,sans-serif;
-    color: #e9ab2b;
+}
+.index-title {
+  color: #253860;
+}
+.age-title {
+  color: #fcf305;
+}
+.filles-title {
+  color: #f606b5;
+}
+.garcons-title {
+  color: #189fde;
+}
+.societe-title {
+  color: #ff8c05;
+}
+.video-title {
+  color: #cd003e;
+}
+.contact-title {
+  color: #535758;
 }
 .product-line {
     width: 100%;
@@ -292,22 +334,23 @@ h3.title-product {
 }
 /************************************************************PUISSANCE 4*/
 .body2 {
-  background-image: url(../img/bg-tic-tac-toe.jpg);
+  background-image: url(../img/puissance4.jpg);
   width : 100%;
   height: 100%;
+  background-repeat: no-repeat;
 }
 .container {
-  background-color: #fff;
-  opacity: 0.6;
-  border: 2px solid #000;
+  /*! background-color: #fff; */
+  /*! opacity: 0.6; */
+  /*! border: 2px solid #000; */
   width: 75%;
   height: auto;
   position: absolute;
   left: 0;
-  top: 6%;
+  /*! top: 0%; */
   right: 0;
   padding: 2%;
-  margin: 0 auto;
+  margin: 330px auto 0 auto;
 }
 img {
   width: 100%;
@@ -319,6 +362,22 @@ img {
   margin-bottom: 26px;
   font-family: 'Arial';
 }
+.body2 h3 {
+  text-align: center;
+  font-family: Lato,Arial,sans-serif;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  color: #fff;
+  font-size: 20px;
+}
+.body2 p {
+    font-family: Lato,Arial,sans-serif;
+    font-size: 12px;
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto 40px auto;
+    color: #fff;
+}
 table {
   border: 2px solid #000;
   border-collapse: collapse;
@@ -327,7 +386,7 @@ table {
 }
 td {
   text-align: center;
-  border: 2px solid #000;
+  border: 2px solid #fff;
 }
 .player1 {
   background-image: url(../img/circle-red.png);
@@ -343,10 +402,10 @@ td {
   visibility: hidden;
 }
 #bingo {
-    background-color: red;
-    border: 5px solid #000;
-    font-family: 'Arial';
-    font-weight: bold;
+    background-color: #e9ab2b;
+    border-radius: 50px;
+    font-family: Lato,Arial,sans-serif;
+    /*! font-weight: bold; */
     color: #fff;
     opacity: 0.9;
     width: 33%;
@@ -354,13 +413,13 @@ td {
     padding: 40px 50px;
     text-align: center;
     position: relative;
-    top: 270px;
+    top: 666px;
 }
 #player {
-    color: green;
-    font-family: 'Arial';
+    color: #fff;
+    font-family: Lato,Arial,sans-serif;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 17px;
     text-align: center;
     margin-top: 20px;
 }
@@ -392,7 +451,7 @@ td {
     margin: 0 auto 100px auto;
     width: 400px;
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     border-radius: 1em;
     margin-top: 100px;
 }
@@ -433,7 +492,7 @@ button {
     width: 100%;
     clear: both;
     padding: 40px 0;
-    border-top: 2px solid #e9ab2b;
+    background-color: #e9ab2b;
 }
 .colon-foot {
     width: 85%;
@@ -449,7 +508,7 @@ button {
 }
 .info-footer ul h3 {
   font-family: DK Lemon Yellow Sun,Arial,sans-serif;
-  color: #e9ab2b;
+  color: #253860;
   font-size: 21px;
 }
 .info-footer ul li {
@@ -460,12 +519,12 @@ button {
 .info-footer ul li a {
     font-family: Lato,Arial,sans-serif;
     text-decoration: none;
-    color: #000;
-    color: #8c8c8c;
+    color: #fff;
     font-size: 16px;
 }
 .info-footer ul li a:hover {
     text-decoration: underline;
+    color: #000;
 }
 .info-footer ul li {
   margin-top: 38px;
@@ -475,11 +534,16 @@ button {
 }
 .fa.fa-facebook-square:before, .fa.fa-twitter-square:before {
   margin-right: 20px;
-  color: #e9ab2b;
+}
+.fa.fa-facebook-square, .fa.fa-twitter-square {
+  color: #fff;
   font-size: 21px;
 }
+.fa.fa-facebook-square:hover, .fa.fa-twitter-square:hover {
+  color: #000;
+}
 .copyright {
-  color: #8c8c8c;
+  color: #fff;
     margin: 70px auto 0 auto;
     width: 29%;
   font-family: Lato,Arial,sans-serif;
@@ -487,16 +551,17 @@ button {
 }
 .copyright a {
     text-decoration: none;
-    color: #8c8c8c;
+    color: #fff;
 }
 .copyright a:hover {
   text-decoration: underline;
 }
 /**********************************************************BACK-TOP***/
 #back-top {
-    background-image: -webkit-linear-gradient(30deg, #e9ab2b 0%, #ffffff 100%);
+  background-color: #e9ab2b;
+    /*background-image: -webkit-linear-gradient(30deg, #e9ab2b 0%, #ffffff 100%);
     background-image: -o-linear-gradient(30deg, #e9ab2b 0%, #ffffff 100%);
-    background-image: linear-gradient(120deg, #e9ab2b 0%, #ffffff 100%);
+    background-image: linear-gradient(120deg, #e9ab2b 0%, #ffffff 100%);*/
     width: 30px;
     height: 30px;
     border-radius : 20%;
@@ -505,15 +570,35 @@ button {
     right: 4px;
 }
 #back-top:hover {
-    background-image: -webkit-linear-gradient(30deg, #ffffff 0%, #e9ab2b 100%);
+  background-color: #e9ab2b;
+    /*background-image: -webkit-linear-gradient(30deg, #ffffff 0%, #e9ab2b 100%);
     background-image: -o-linear-gradient(30deg, #ffffff 0%, #e9ab2b 100%);
     background-image: linear-gradient(120deg, #ffffff 0%, #e9ab2b 100%);
-}
+}*/
 #back-top a i {
     font-size: 20px;
     color: #fff;
     line-height: 28px;
     padding-left: 6px;
-    width: 55px;
-    height: 70px;
+    width: 24px;
+    height: 30px;
+}
+/*********************************************************MENTIONS LEGALES*/
+.container2 {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #808080;
+}
+.container2 h2, .container2 h4, .container2 p {
+  font-family: Lato,Arial,sans-serif;
+}
+.container2 h2 {
+  color: #fff;
+  text-align: center;
+}
+.container2 h4 {
+  color: #fff;
+}
+.container2 p {
+  color: #fff;
 }
