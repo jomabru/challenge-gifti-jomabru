@@ -266,6 +266,47 @@ h3.title-product {
 .price:hover {
   background-color: #e9ab2b;
 }
+/***************************************************DISCRIBE*/
+.discribe {
+    width: 86%;
+    padding: 95px;
+}
+.discribe .code_couleur_societe {
+  font-family: DK Lemon Yellow Sun,Arial,sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #ff8c05;
+}
+.discribe img {
+    max-width: 60%;
+    float: left;
+    margin-right: 100px;
+}
+.discribe p {
+    margin-top: 68px;
+    color: #ff8c05;
+    text-shadow: 0px 0px 100px #000;
+}
+.price_product {
+    margin-top: 50px;
+    color: #ff8c05;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+.panier_button {
+    margin-top: 100px;
+    position: absolute;
+    right: 87px;
+}
+.panier_button a {
+  text-decoration: none;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 4px 8px;
+  color: #ff8c05;
+  box-shadow: 2px 2px 8px #ff8c05;
+}
 /******************************************************************BANNIERE*/
 .banner {
   position:relative;
@@ -277,15 +318,20 @@ h3.title-product {
   right: 163px;
   border-radius: 20px;
 }
+.bouton-jeu:hover {
+  background-color: #253860;
+  border: 2px solid #fff;
+  opacity: 0.8;
+}
 .bouton-jeu a {
   display: block;
   color: #fff;
   font-family: Lato, Arial, sans-serif;
-  text-decoration: navajowhite;
-  font-size: 35px;
+  text-decoration: none;
+  font-size: 25px;
   line-height: 43px;
-  font-weight: bold;
-  padding: 16px 108px;
+  /*! font-weight: bold; */
+  padding: 8px 60px;
 }
 /**********************************************************SCROLLBOX SLIDER*/
 #slider-references {
