@@ -25,7 +25,7 @@ Contact : #535758
   margin: 0;
   padding : 0;
 }
-body {#f606b5
+body {/*#f606b5*/
   overflow-x: hidden;
 }
 .container {
@@ -33,11 +33,15 @@ body {#f606b5
 }
 /***************************************************HEADER*/
 header {
-    border-bottom: 2px solid #fff;
+  /*background-color: #fbf1db;*/
+  /*background-color: #e9ab2b;
+  opacity: 0.8;*/
+  /*background-image: url(../img/pattern.png);*/
 }
 /**********************************************************************LOGO*/
 .logo {
-    width: 97%;#ff8c05
+    background-color: #e6ba60;
+    /*opacity: 0.7;*/
     height: 100px;
     padding: 20px;
 }
@@ -106,7 +110,7 @@ header {
 .menu li {
     height: 55px;
     display: inline-block;
-    margin-left: 45px;
+    margin-left: 11px;
     padding: 0 20px;
 }
 .menu li.active-index {
@@ -261,7 +265,27 @@ h3.title-product {
 }
 .price:hover {
   background-color: #e9ab2b;
-  /*padding: 2px 5px;*/
+}
+/******************************************************************BANNIERE*/
+.banner {
+  position:relative;
+}
+.bouton-jeu {
+  background-color: #e9ab2b;
+  position: absolute;
+  top: 372px;
+  right: 163px;
+  border-radius: 20px;
+}
+.bouton-jeu a {
+  display: block;
+  color: #fff;
+  font-family: Lato, Arial, sans-serif;
+  text-decoration: navajowhite;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: bold;
+  padding: 16px 108px;
 }
 /**********************************************************SCROLLBOX SLIDER*/
 #slider-references {
@@ -310,7 +334,7 @@ h3.title-product {
 }
 #slider-references #demo-btn a {
   cursor: pointer;
-  color:#fff;
+  /*color:#fff;*/
   position: absolute;
   top: -150px;
   -moz-border-radius: 50%;
@@ -320,7 +344,7 @@ h3.title-product {
   padding: 10px 15px;
 }
 #slider-references #demo-btn a:hover {
-  color:deepskyblue;
+  /*color:deepskyblue;*/
 }
 #slider-references #demo-btn a#demo-backward {
   left: 60px;
@@ -451,7 +475,7 @@ td {
     margin: 0 auto 100px auto;
     width: 400px;
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     border-radius: 1em;
     margin-top: 100px;
 }
@@ -492,7 +516,7 @@ button {
     width: 100%;
     clear: both;
     padding: 40px 0;
-    border-top: 2px solid #e9ab2b;
+    background-color: #e9ab2b;
 }
 .colon-foot {
     width: 85%;
@@ -508,7 +532,7 @@ button {
 }
 .info-footer ul h3 {
   font-family: DK Lemon Yellow Sun,Arial,sans-serif;
-  color: #e9ab2b;
+  color: #253860;
   font-size: 21px;
 }
 .info-footer ul li {
@@ -519,12 +543,12 @@ button {
 .info-footer ul li a {
     font-family: Lato,Arial,sans-serif;
     text-decoration: none;
-    color: #000;
-    color: #8c8c8c;
+    color: #fff;
     font-size: 16px;
 }
 .info-footer ul li a:hover {
     text-decoration: underline;
+    color: #000;
 }
 .info-footer ul li {
   margin-top: 38px;
@@ -534,35 +558,45 @@ button {
 }
 .fa.fa-facebook-square:before, .fa.fa-twitter-square:before {
   margin-right: 20px;
-  /*color: #e9ab2b;*/
-  /*font-size: 21px;*/
 }
-.fa.fa-facebook-square, .fa.fa-twitter-square {
-  color: #e9ab2b;
+/*.fa.fa-facebook-square, .fa.fa-twitter-square {
+  color: #fff;
   font-size: 21px;
 }
 .fa.fa-facebook-square:hover, .fa.fa-twitter-square:hover {
-  color: #8c8c8c;
+  color: #000;
+
+}*/
+.fa.fa-facebook-square, .fa.fa-twitter-square {
+  color: #fff;
+  font-size: 21px;
+}
+.fa.fa-facebook-square:hover, .fa.fa-twitter-square:hover {
+  color: #000;
 }
 .copyright {
-  color: #8c8c8c;
-    margin: 70px auto 0 auto;
-    width: 29%;
+  color: #fff;
+  margin: 70px auto 0 auto;
+  width: 29%;
   font-family: Lato,Arial,sans-serif;
   text-align: center;
 }
 .copyright a {
     text-decoration: none;
-    color: #8c8c8c;
+    color: #fff;
 }
 .copyright a:hover {
+  color: #000;
   text-decoration: underline;
+}
+/***************************CONTACT**************************/
+.contact-infos, .form {
+    width:45%;
+    float: left;
 }
 /**********************************************************BACK-TOP***/
 #back-top {
-    background-image: -webkit-linear-gradient(30deg, #e9ab2b 0%, #ffffff 100%);
-    background-image: -o-linear-gradient(30deg, #e9ab2b 0%, #ffffff 100%);
-    background-image: linear-gradient(120deg, #e9ab2b 0%, #ffffff 100%);
+    background-color: #253860;
     width: 30px;
     height: 30px;
     border-radius : 20%;
@@ -571,34 +605,46 @@ button {
     right: 4px;
 }
 #back-top:hover {
-    background-image: -webkit-linear-gradient(30deg, #ffffff 0%, #e9ab2b 100%);
-    background-image: -o-linear-gradient(30deg, #ffffff 0%, #e9ab2b 100%);
-    background-image: linear-gradient(120deg, #ffffff 0%, #e9ab2b 100%);
+    background-color: #e9ab2b;
+
 }
-#back-top a i {
+#back-top a .fa.fa-chevron-up {
     font-size: 20px;
     color: #fff;
     line-height: 28px;
-    padding-left: 6px;
+    padding-left: 5px;
     width: 24px;
     height: 30px;
 }
+/*before invisible sur le i .fa**********************************/
 /*********************************************************MENTIONS LEGALES*/
 .container2 {
     width: 80%;
     margin: 0 auto;
     background-color: #808080;
-}
-.container2 h2, .container2 h4, .container2 p {
-  font-family: Lato,Arial,sans-serif;
+    padding: 30px;
 }
 .container2 h2 {
   color: #fff;
   text-align: center;
+  margin-bottom: 60px;
+  font-family: 'DK Lemon Yellow Sun', sans-serif;
+  font-size: 30px;
+}
+.container2 h4, .container2 p {
+  font-family: Lato,Arial,sans-serif;
 }
 .container2 h4 {
   color: #fff;
+  text-decoration: underline;
+  margin: 30px 0 20px 0;
 }
 .container2 p {
   color: #fff;
+}
+.container2 a {
+    color: #fff;
+}
+.container2 a:hover {
+    color: #000;
 }
