@@ -616,22 +616,35 @@ button {
     width: 24px;
     height: 30px;
 }
+/*before invisible sur le i .fa**********************************/
 /*********************************************************MENTIONS LEGALES*/
 .container2 {
     width: 80%;
     margin: 0 auto;
     background-color: #808080;
-}
-.container2 h2, .container2 h4, .container2 p {
-  font-family: Lato,Arial,sans-serif;
+    padding: 30px;
 }
 .container2 h2 {
   color: #fff;
   text-align: center;
+  margin-bottom: 60px;
+  font-family: 'DK Lemon Yellow Sun', sans-serif;
+  font-size: 30px;
+}
+.container2 h4, .container2 p {
+  font-family: Lato,Arial,sans-serif;
 }
 .container2 h4 {
   color: #fff;
+  text-decoration: underline;
+  margin: 30px 0 20px 0;
 }
 .container2 p {
   color: #fff;
+}
+.container2 a {
+    color: #fff;
+}
+.container2 a:hover {
+    color: #000;
 }
