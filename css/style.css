@@ -278,15 +278,35 @@ h3.title-product {
   font-size: 40px;
   color: #ff8c05;
 }
-.discribe img {
+
+.discribe .code_couleur_video {
+  font-family: DK Lemon Yellow Sun,Arial,sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #cd003e;
+}
+.discribe .code_couleur_fille {
+  font-family: DK Lemon Yellow Sun,Arial,sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #f606b5;
+}
+.discribe .size-normal {
     max-width: 60%;
     float: left;
     margin-right: 100px;
 }
-.discribe p {
+.discribe .resize-image {
+    max-width: 50%;
+    float: left;
+    margin-right: 100px;
+    margin-top: 71px;
+}
+.discribe .marge {
     margin-top: 68px;
     color: #ff8c05;
     text-shadow: 0px 0px 100px #000;
+    text-align: justify;
 }
 .price_product {
     margin-top: 50px;
