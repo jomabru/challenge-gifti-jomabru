@@ -1,74 +1,50 @@
 // var morpion = new Array(-1, -1, -1, -1, -1, -1, -1, -1, -1);
 var player = 1;
-var table = new Array(42); // Je crée une variable appelée "table" qui correspond à un tableau de 42 cellules
-for (var i = 0; i < table.length; i++) {  // i=0; si i est plus petit que la longueur du tableau; i++ agrémente i de 1 à chaque fois
-  table[i] = 0;
-}
-
-var board = new Array(6);
-for (var i = 0; i < board.length; i++) {
-  board[i] = new Array(7);
-}
-for (var i = 0; i < board.length; i++) {
-  for (var j = 0; j < board[i].length; j++) {
-    board[i][j] = 0;
-  }
-}
-
-
-var td = document.getElementsByTagName("td");
-for (var i = 0; i < td.length; i++) {
-  td[i].onclick = function(e){
-    var box = this.getAttribute("id");
-    var colone = box%7;
-    var ligne = Math.floor(box/7);
-    play2(colone);
-  }
-}
-
 var compteTour = 0;
-confetti();
+var board = new Array(6);
 
+init();  //function d'initialisation Réinitialisation du jeu
 
-function play(id){ //J'appelle la fonction play
-  console.log(id + " " + player); //J'affiche quel joueur joue
-    compteTour++;  // Je compte les tours
-  if(player == 1){  // Si c'est le joueur 1 qui a cliqué
-    document.getElementById(id).classList.add("player1"); //Alors on ajoute la classe pour placer le signe
-    table[id] = player;
-    testVictoire();  // Je teste la victoire
-    player = 2;  // C'est au tour du joueur 2
-    console.log(compteTour + " tours ");  // J'affiche le nombre de tours dans la console
-    // compteTour++;
-  }else if(player == 2){  // Sinon si c'est le joueur 2 qui a cliqué
-    document.getElementById(id).classList.add("player2"); //Alors on ajoute la classe pour placer le signe
-    table[id] = player;
-    testVictoire();
-
-    player=1;  // C'est au tour du joueur 1
-    console.log(compteTour + " tours ");
-    // compteTour++;
+function init(){
+  for (var i = 0; i < board.length; i++) {
+    board[i] = new Array(7);
   }
-  document.getElementById(id).onclick = function() { return false; } // Le clic du joueur 2 ne fonctionnera pas
-  document.getElementById('player').innerHTML = 'C\'est au tour du joueur '+player; //Affiche dans le HTML quel joueur doit jouer
+  for (var i = 0; i < board.length; i++) {
+    for (var j = 0; j < board[i].length; j++) {
+      board[i][j] = 0;
+    }
+  }
+
+  var td = document.getElementsByTagName("td");
+  for (var i = 0; i < td.length; i++) {
+    td[i].onclick = function(e){
+      var box = this.getAttribute("id");
+      var colone = box%7;
+      var ligne = Math.floor(box/7);
+      play(colone);
+    }
+  }
+
+  confetti();
 }
 
-function play2(colone){
+function play(colone){
   for (var i = board.length - 1; i >= 0; i--){
     if(board[i][colone] == 0) {
         var choice = colone +(i*7);
         document.getElementById(choice).classList.add("player"+player); //Alors on ajoute la classe pour placer le signe
         board[i][colone] = player;
         i = 0;
-        testVictoire2();
+        testVictoire();
         player = (player == 1)?2:1;
+        document.getElementById('player').innerHTML = 'C\'est au tour du joueur '+player;
     }else{
       // console.log("board["+i+"]["+colone+"] = "+board[i][colone]);
     }
   }
 }
 
-function testVictoire2(){
+function testVictoire(){
   var victory = false;
   for (var i = 0; i < board.length; i++) {
     if(board[i][0] == player && board[i][1] == player && board[i][2] == player && board[i][3] == player){
@@ -113,49 +89,20 @@ function testVictoire2(){
         document.getElementsByTagName('body')[0].style.backgroundSize = "100%"; // Je règle la taille du bg à 100% pour qu'il s'adapte à la résolution de l'écran
         document.getElementById('bingo').style.backgroundColor = "Blue"; // Je change la couleur du bg d'alerte de victoire pour le joueur 2
       }
-     document.getElementById('bingo').innerHTML = "Félicitations... Le player " + player + " a gagné son bon de réduction de 10% à valoir sur tout le site !!!"; // Rappel de la div #bingo du html vers le js
+      var code = generateCode();
+     document.getElementById('bingo').innerHTML = "Félicitations... Le player " + player + " a gagné son bon de réduction de 10% à valoir sur tout le site !!!<br/>Voici votre code de réduction :<br/>"+code; // Rappel de la div #bingo du html vers le js
      document.getElementById('bingo').classList.remove("hidden"); // J'enlève la class (css) pour afficher la div en cas de victoire
      document.getElementById('bingo').onclick = function() // Lorsque l'on clique sur le message
      {
        document.getElementById('bingo').classList.add("hidden"); // Le message de victoire disparaît lorsqu'on clique dessus
      }
-     for (var i = 0; i < table.length; i++) { // i=0; si i est plus petit que la longueur du tableau; i++ agrémente i de 1 à chaque fois
-      document.getElementById(i).onclick = function() { return false; }; // Le clic de l'autre joueur ne fonctionnera pas
+     var td = document.getElementsByTagName("td");
+     for (var i = 0; i < td.length; i++) {
+       td[i].onclick = function(){return false;};
      }
    }
-//    function getRandomIntInclusive(min, max) {
-//       min = Math.ceil(min);
-//       max = Math.floor(max);
-//       return Math.floor(Math.random() * (max - min +1)) + min;
-//     }
-}
 
-function testVictoire() { // J'appelle la fonction pour tester la victoire
-  if (victory) { // Si on appelle la variable "victory"
-      var conf = document.getElementsByClassName('confetti'); // J'appelle l'élément "confetti"
-      for (var i = 0; i < conf.length; i++) { // Si i est plus petit que la longueur de mon élément "conf"
-        conf[i].style.top = "100%"; // Je spécifie le décalage du bord haut de la marge par rapport au bord haut du body
-      }
-      if (player == 1) { // Si c'est le joueur 1 qui gagne...
-          document.getElementsByTagName('body')[0].style.backgroundImage = "url(../img/puissance4-bravo.jpg)"; // ...on appelle le bg image "puissance4-bingo.jpg"
-          document.getElementsByTagName('body')[0].style.backgroundSize = "100%"; // Je règle la taille du bg à 100% pour qu'il s'adapte à la résolution de l'écran
-      }
-      else { // sinon (Si c'est le joueur 2 qui gagne)
-          document.getElementsByTagName('body')[0].style.backgroundImage = "url(../img/puissance4-bravo.jpg)"; // ...on appelle le bg image "puissance4-bingo.jpg"
-          document.getElementsByTagName('body')[0].style.backgroundSize = "100%"; // Je règle la taille du bg à 100% pour qu'il s'adapte à la résolution de l'écran
-          document.getElementById('bingo').style.backgroundColor = "Blue"; // Je change la couleur du bg d'alerte de victoire pour le joueur 2
-        }
-      document.getElementById('bingo').innerHTML = "Félicitations... Le player " + player + " a gagné son bon de réduction de 10% à valoir sur tout le site !!!"; // Rappel de la div #bingo du html vers le js
-      document.getElementById('bingo').classList.remove("hidden"); // J'enlève la class (css) pour afficher la div en cas de victoire
-      document.getElementById('bingo').onclick = function() // Lorsque l'on clique sur le message
-      {
-        document.getElementById('bingo').classList.add("hidden"); // Le message de victoire disparaît lorsqu'on clique dessus
-      }
-      for (var i = 0; i < table.length; i++) { // i=0; si i est plus petit que la longueur du tableau; i++ agrémente i de 1 à chaque fois
-        document.getElementById(i).onclick = function() { return false; }; // Le clic de l'autre joueur ne fonctionnera pas
-      }
-    }
-  }
+}
 
 function confetti(){  // J'appelle la fonction confetti
   var couleurs = new Array(); // Je crée ma variable "couleurs" qui correspond à mon tableau
@@ -174,4 +121,24 @@ function confetti(){  // J'appelle la fonction confetti
     var top = Math.floor(Math.random()*500)+20; // Je génère un nombre aléatoire pour disperser mes confettis sur toute la hauteur de l'écran en partant de la gauche
     conf.style.top = -top+"px";
   }
+}
+
+function getRandomChar(){
+  var character = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  var rand = Math.floor(Math.random() * character.length);
+  return character[rand];
+}
+
+function generateCode(){
+  var code = "";
+  var cmp = 1;
+  while(code.length < 15){
+    code += getRandomChar();
+    if(cmp%4 == 0){
+      code += "-";
+    }
+    cmp++;
+  }
+  code += "2018";
+  return code;
 }

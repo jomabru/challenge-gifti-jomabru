@@ -277,15 +277,20 @@ h3.title-product {
   right: 163px;
   border-radius: 20px;
 }
+.bouton-jeu:hover {
+  background-color: #253860;
+  border: 2px solid #fff;
+  opacity: 0.8;
+}
 .bouton-jeu a {
   display: block;
   color: #fff;
   font-family: Lato, Arial, sans-serif;
-  text-decoration: navajowhite;
-  font-size: 35px;
+  text-decoration: none;
+  font-size: 25px;
   line-height: 43px;
-  font-weight: bold;
-  padding: 16px 108px;
+  /*! font-weight: bold; */
+  padding: 8px 60px;
 }
 /**********************************************************SCROLLBOX SLIDER*/
 #slider-references {
