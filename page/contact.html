@@ -72,30 +72,39 @@
 
   <!-- SECTION CONTACT -->
   <section class="section-contact">
-    <!-- DIV GAUCHE -->
     <h1 class="contact-title">Contactez-nous</h1>
-    <div class="contact-infos">
-      <h2>Horaires du magasin :</h2>
-    </div>
-    <!-- FORMULAIRE-->
-    <form action="/ma-page-de-traitement" method="post" class="form" style="width:50%;">
-        <div>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" />
+    <div class="centrage">
+        <!-- DIV GAUCHE -->
+        <div class="contact-infos">
+          <h2>Horaires du magasin :</h2>
+          <ul>
+            <li>Du mardi au vendredi :</li>
+            <li>de 9h00 à 12h00</li>
+            <li>de 14h00 à 18h00</li>
+            <li>Le samedi :</li>
+            <li>de 9h00 à 18h00 Non-stop</li>
+          </ul>
         </div>
-        <div>
-            <label for="courriel">Courriel :</label>
-            <input type="email" id="courriel" />
-        </div>
-        <div>
-            <label for="message">Message :</label>
-            <textarea id="message"></textarea>
-        </div>
+        <!-- FORMULAIRE-->
+        <form action="/ma-page-de-traitement" method="post" class="form">
+            <div>
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" />
+            </div>
+            <div>
+                <label for="courriel">Courriel :</label>
+                <input type="email" id="courriel" />
+            </div>
+            <div>
+                <label for="message">Message :</label>
+                <textarea id="message"></textarea>
+            </div>
 
-        <div class="button">
-            <button type="submit">Envoyer votre message</button>
-        </div>
-    </form>
+            <div class="button">
+                <button type="submit">Envoyer votre message</button>
+            </div>
+        </form>
+    </div>
   </section>
 
     <!-- FOOTER -->
