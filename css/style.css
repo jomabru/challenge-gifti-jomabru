@@ -290,11 +290,29 @@ h3.title-product {
   text-align: center;
   font-size: 40px;
   color: #f606b5;
+}.discribe .code_couleur_garçon {
+  font-family: DK Lemon Yellow Sun,Arial,sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #189fde;
+}
+.discribe .code_couleur_air {
+  font-family: DK Lemon Yellow Sun,Arial,sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #0ac22d;
+}
+.discribe .code_couleur_deguisement {
+  font-family: DK Lemon Yellow Sun,Arial,sans-serif;
+  text-align: center;
+  font-size: 40px;
+  color: #e009fa;
 }
 .discribe .size-normal {
     max-width: 60%;
     float: left;
     margin-right: 100px;
+    margin-top: 70px;
 }
 .discribe .resize-image {
     max-width: 50%;
