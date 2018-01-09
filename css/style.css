@@ -665,10 +665,20 @@ button {
     font-size: 18px;
     margin-bottom: 15px;
 }
+
+.section-contact {
+    height: 410px;
+}
+
 .contact-infos ul li {
     font-family: Lato, Arial, sans-serif;
-    color: #ccc;
+    color: #535758;
+    list-style-type: none;
 }
+.title-adress {
+    margin-top: 13px;
+}
+
 /**********************************************************BACK-TOP***/
 #back-top {
     background-color: #253860;
