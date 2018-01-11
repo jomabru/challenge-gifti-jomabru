@@ -81,6 +81,9 @@ header {
 .contact-icon {
   color: #535758;
 }
+.mentions-icon {
+  color: #808080;
+}
 /****************************************************************ICON-ACHAT*/
 .icon-achat {
     float: right;
@@ -282,7 +285,6 @@ h3.title-product {
   font-family: Lato,Arial,sans-serif;
   color: #ff8c05;
 }
-
 .discribe .code_couleur_video {
   font-family: DK Lemon Yellow Sun,Arial,sans-serif;
   text-align: center;
@@ -685,9 +687,18 @@ button {
 .contact-infos, .form {
     width:40%;
     float: left;
+    padding: 57px 0;
 }
 .contact-infos {
     padding-left: 50px;
+    padding-top: 0;
+}
+.title-contact {
+  text-align: left;
+  padding: 15px 0;
+  font-size: 27px;
+  font-family: DK Lemon Yellow Sun,Arial,sans-serif;
+  color: #e9ab2b;
 }
 .contact-infos h2 {
     font-family: Lato,Arial,sans-serif;
@@ -734,7 +745,7 @@ button {
 /*********************************************************MENTIONS LEGALES*/
 .container2 {
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     background-color: #808080;
     padding: 30px;
 }
@@ -744,6 +755,7 @@ button {
   margin-bottom: 60px;
   font-family: 'DK Lemon Yellow Sun', sans-serif;
   font-size: 30px;
+  text-decoration: underline;
 }
 .container2 h4, .container2 p {
   font-family: Lato,Arial,sans-serif;
